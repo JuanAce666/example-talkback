@@ -1,0 +1,51 @@
+        /* Estilos básicos */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Tarjetas de logotipos */
+        .logo-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .logo-card img {
+            max-width: 100%;
+            max-height: 100px;
+        }
+
+        @media (max-width: 768px) {
+            .logo-card {
+                flex-direction: column;
+            }
+        }
+
+        .logo-card.selected {
+            border: 2px solid red;
+          }
+
+          .proyecto {
+            background-color: transparent;
+          }
+          
+          .proyecto.selected {
+            background-color: red;
+          }
+          
